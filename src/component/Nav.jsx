@@ -30,7 +30,7 @@ const Nav = () => {
     </div>
       <div className='w-[95%] md:w-11/12 container mx-auto flex gap-2 md:gap-4 lg:gap-6 my-auto pt-10 md:pt-8 lg:pt-10 text-sm md:text-md lg:text-[15px]'>
         {/* //<Link to='/Landing'> */}
-        <button className='text-white rounded bg-purple-500 px-2 py-1 hover:transform-[scale(1.1)]'>Home</button>
+        <Link to="/"><button className='text-white rounded bg-purple-500 px-2 py-1 hover:transform-[scale(1.1)]'>Home</button></Link>
         {/* </Link> */}
         {/* <Link className='my-auto' to='/Following'> */}
         <Link to="/following"><button className='hover:text-purple-500 hover:transform-[scale(1.1)]'>Following</button></Link>

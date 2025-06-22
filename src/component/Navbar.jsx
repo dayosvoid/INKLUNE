@@ -49,8 +49,8 @@ const Navbar = () => {
                     <h1>Explore</h1>
                     <h1>Categories</h1>
                     <h1>Communities</h1>
-                    <button className='border border-purple-500 hover:bg-purple-500 hover:text-white w-[80%] mx-auto'>Sign In</button>
-                    <button className='bg-purple-500 text-white w-[80%] mx-auto'>Sign Up</button>
+                    <Link to="/SignIn"><button className='border border-purple-500 hover:bg-purple-500 hover:text-white w-[80%] mx-auto'>Sign In</button></Link>
+                    <Link to="/SignUp"><button className='bg-purple-500 text-white w-[80%] mx-auto'>Sign Up</button></Link>
                 </div>}
    </div>
   )
