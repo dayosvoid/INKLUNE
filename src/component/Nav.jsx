@@ -22,7 +22,7 @@ const Nav = () => {
           </div>
         </div>
         <div className='flex md:w-[30%] lg:w-[20%]'>
-         <Link to="/post"><span className='hidden md:block'><img className='w-[50%] pt-2' src={write} alt="" /></span></Link>
+         <span className='hidden md:block'><img className='w-[50%] pt-2' src={write} alt="" /></span>
           <span><img className='w-[60%] md:w-[50%] pt-2' src={bell} alt="" /></span>
          <Link to="/Profile"><span><img className='w-[60%]' src={profile} alt="" /></span></Link>
         </div>

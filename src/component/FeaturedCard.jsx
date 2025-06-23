@@ -15,7 +15,7 @@ const FeaturedCard = ({
   children,
 }) => {
   return (
-    <div className="max-w-[370px] min-w-[280px] w-11/12 container mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="max-w-[370px] min-w-[280px] md:w-full w-11/12 container mx-auto bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Featured Image */}
       {imageUrl && (
         <img
@@ -57,8 +57,8 @@ const FeaturedCard = ({
           </span>
         )}
         <div className="flex gap-4 text-sm text-gray-500">
-          <button disabled={true} style={{cursor:"not-allowed"}}><span className="flex gap-2 opacity-60"> <Heart/> {like} </span></button>
-          <button disabled={true} style={{cursor:"not-allowed"}}><span className="flex gap-2 opacity-60"><MessageSquareText/> {comment}</span></button>
+          <button  disabled style={{cursor:"not-allowed"}}><span className="flex gap-2 opacity-60"> <Heart/> {like} </span></button>
+          <button disabled style={{cursor:"not-allowed"}}><span className="flex gap-2 opacity-60"><MessageSquareText/> {comment}</span></button>
         </div>
       </div>
 

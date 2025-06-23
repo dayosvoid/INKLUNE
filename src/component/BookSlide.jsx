@@ -54,7 +54,7 @@ const BookSlide = () => {
     ]
   };
   return (
-    <div className='max-w-full py-8 relative'>
+    <div className='max-w-full py-8 relative pt-25'>
         <div className='w-[95%] md:w-11/12 container mx-auto'>
             <Slider {...settings} ref={books}>
                 <div className='holder w-[300px]'>

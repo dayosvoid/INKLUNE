@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 const SignIn = () => {
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const [user, setUser] = useState({
         email:"",
         password:""
@@ -46,7 +46,7 @@ const handleSubmit = (e) => {
             email:"",
             password:""
         })
-        // navigate('/Landing')
+        navigate('/Home2')
     }
 }
     // function to allow input fields accept values
@@ -76,10 +76,10 @@ const handleSubmit = (e) => {
                         <input className='border px-3 py-1 rounded-md' type="password" id='password' autoComplete='on' name='password' placeholder='**********' value={user.password}  onChange={handleChange}/>
                     </div>
                     {error.password && <p className='text-red-900 text-sm'>{error.password}</p>}
-                    <Link to="/Home2"><button className='text-white w-[100%] rounded-md py-2 bg-purple-500 border border-purple-500'>Sign In</button></Link>
+                    <button className='text-white w-[100%] rounded-md py-2 bg-purple-500 border border-purple-500'>Sign In</button>
                     <div className='text-center flex gap-1 mx-auto'>
                         <p>Don't have an account yet?</p>
-                       <Link to="/signUp"> <span className='text-purple-500'>Sign Up</span></Link>
+                       <Link to="/SignUp"> <span className='text-purple-500'>Sign Up</span></Link>
                     </div>
                 </form>
             </div>

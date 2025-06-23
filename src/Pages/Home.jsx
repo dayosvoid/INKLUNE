@@ -10,7 +10,7 @@ import Voice from '../component/Voice'
 
 const Home = () =>{
   return (
-    <div>
+    <div className=''>
      <Navbar/> 
      <Hero/>
      <Featured/>

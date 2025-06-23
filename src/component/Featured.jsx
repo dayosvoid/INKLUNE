@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import FeaturedCard from "./FeaturedCard";
 import bigimg1 from "../assets/felix imgs/assets/featured-img1.jpg"
 import bigimg2 from "../assets/felix imgs/assets/featured-img2.jpg"
@@ -104,17 +105,17 @@ const Featured = () => {
   );
 
   return (
-    <section id="Categories" className="container mx-auto px-4 md:px-6 py-8 md:py-12 w-11/12">
+    <section id="Categories" className="container mx-auto px-4 md:px-0 py-8 md:py-12 w-11/12">
       {/* Top bar */}
-      <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
-        <h1 className="text-2xl md:text-3xl font-bold text-gray-800 font-Manrope">
+      <div className="flex justify-between items-center mb-8 w-full">
+        <h1 className="text-md md:text-2xl md:text-3xl font-bold text-gray-800 font-Manrope">
           Featured Stories
         </h1>
         
         {/* Filter tabs */}
         <div className="flex bg-gray-100 rounded-full p-1 font-Manrope">
           <button 
-            className={`px-4 py-2 rounded-full transition-colors font-medium ${
+            className={`px-2 md:px-4 py-2 rounded-full transition-colors font-medium ${
               activeFilter === "latest" 
                 ? "bg-white text-gray-800" 
                 : "text-gray-600 hover:text-gray-800"
@@ -157,9 +158,9 @@ const Featured = () => {
 
       {/* View more button (optional) */}
       <div className="mt-10 text-center">
-        <button className="px-20 py-2 border border-purple-500 text-black rounded-md hover:bg-purple-50 transition-colors font-medium">
+         <Link to="/signUP"><button className="px-20 text-nowrap text-[12px] md:text-xl py-2 border border-purple-500 text-black rounded-md hover:bg-purple-50 transition-colors font-normal">
           View More Stories
-        </button>
+        </button></Link>
       </div>
     </section>
   );

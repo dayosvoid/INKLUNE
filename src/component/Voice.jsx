@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Voice = () =>{
   return (
@@ -14,10 +15,10 @@ const Voice = () =>{
               Join a community of thoughtful writers and readers who value authentic connection and meaningful conversation.
             </p>
             <div className='flex flex-col sm:flex-row justify-center gap-3 sm:gap-4'>
-              <button className='px-6 sm:px-8 sm:py-3 bg-white text-color font-medium rounded-lg hover:bg-gray-100 transition-colors'>
+              <Link to='/signUp'><button className='px-6 cursor-pointer sm:px-8 sm:py-3 bg-white text-color font-medium rounded-lg hover:bg-gray-100 transition-colors'>
                 Create Account
-              </button>
-              <button className='px-6 py-2 sm:px-8 sm:py-3 bg-transparent border-1 border-white text-white font-medium rounded-lg hover:bg-white hover:text-purple-500 transition-colors'>
+              </button></Link>
+              <button className='px-6 cursor-pointer py-2 sm:px-8 sm:py-3 bg-transparent border-1 border-white text-white font-medium rounded-lg hover:bg-white hover:text-purple-500 transition-colors'>
                 Learn More
               </button>
             </div>

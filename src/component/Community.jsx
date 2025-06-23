@@ -52,7 +52,7 @@ const Community = () => {
             <h1 className='text-center font-bold py-3 text-lg lg:text-2xl'>Community Voices</h1>
             <div className='flex flex-col md:flex-row gap-5'>
                 <div className='md:w-[60%] lg:w-[65%] rounded-md flex flex-col bg-gray-200 px-4 py-5 gap-3'>
-                    <h1 className='font-bold text-lg'>Trending Discussions</h1>
+                    <h1  className='font-bold text-lg'>Trending Discussions</h1>
                     <div className='rounded-md w-[100%] bg-white mx-auto flex gap-2 px-2 py-5 text-sm'>
                         {
                             data.map((item, index) => {
@@ -69,61 +69,61 @@ const Community = () => {
                         }
                     </div>
                 </div>
-                <div className='md:w-[40%] lg:w-[35%] rounded-md p-2 lg:p-3 bg-gray-200'>
+                <div className='md:w-[40%] lg:w-[35%] rounded-md px-3 py-2 lg:p-3 bg-gray-200'>
                     <h1 className='py-1 font-bold text-lg'>Featured Writers</h1>
-                    <div id='upper' className='py-2'>
+                    <div id='upper' className='space-y-3'>
                         <div className='flex justify-between text-sm lg:text-md'>
                             <div className='flex gap-2'>
-                                <img className='w-[20%] md:w-[30%]' src={writer} alt="" />
+                                <img className='w-[35px] md:w-[50px]' src={writer} alt="" />
                                 <div>
                                     <h1 className='font-semibold'>Maryann</h1>
                                     <p>Poetry & Memoir</p>
                                 </div>
                             </div>
                            <div>
-                             <button onClick={handleFollow1} className='border rounded-full bg-gray-400 border-gray-400 px-4 py-1'>{follow1? "Following":"Follow"}</button>
+                             <button disabled={true} style={{cursor:"not-allowed"}} className='border rounded-full bg-gray-300 border-gray-400 px-4 py-1'>{follow1? "Following":"Follow"}</button>
                            </div>
                         </div>
                         <div className='flex justify-between text-sm lg:text-md py-1'>
                             <div className='flex gap-2'>
-                                <img className='w-[20%] md:w-[30%]' src={writer} alt="" />
+                                <img className='w-[35px] md:w-[50px]' src={writer} alt="" />
                                 <div>
                                     <h1 className='font-semibold'>Albert</h1>
                                     <p>Literary Fiction</p>
                                 </div>
                             </div>
                            <div>
-                             <button onClick={handleFollow2} className='border rounded-full bg-gray-400 border-gray-400 px-4 py-1'>{follow2? "Following":"Follow"}</button>
+                             <button disabled style={{cursor:"not-allowed"}} className='border rounded-full bg-gray-300 border-gray-400 px-4 py-1'>{follow2? "Following":"Follow"}</button>
                            </div>
                         </div>
                             <div className='flex justify-between text-sm lg:text-md'>
                             <div className='flex gap-2'>
-                                <img className='w-[20%] md:w-[30%]' src={writer} alt="" />
+                                <img className='w-[35px] md:w-[50px]' src={writer} alt="" />
                                 <div>
                                     <h1 className='font-semibold'>Korede</h1>
                                     <p>Cultural Essay</p>
                                 </div>
                             </div>
                            <div>
-                             <button onClick={handleFollow3} className='border rounded-full bg-gray-400 border-gray-400 px-4 py-1'>{follow3? "Following":"Follow"}</button>
+                             <button disabled style={{cursor:"not-allowed"}} className='border rounded-full bg-gray-300 border-gray-400 px-4 py-1'>{follow3? "Following":"Follow"}</button>
                            </div>
                         </div>
                     </div>
                     <div id='lower' className='text-sm lg:text-md'>
                         <h1 className='font-bold text-lg py-2'>Popular Tags</h1>
                         <div className='flex flex-wrap gap-2'>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#WritingLife</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#CreativeProcess</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#Poetry</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#Love</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#VentureCapital</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#WritingCommunity</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#Inspiration</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#LiteraryLife</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#TraumaHealing</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#Gaming</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#WritingTips</span>
-                            <span className='bg-gray-400 border border-gray-400 rounded-full px-2 py-1'>#Fiction</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#WritingLife</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center  rounded-full px-2 py-1'>#CreativeProcess</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center  rounded-full px-2 py-1'>#Poetry</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center  rounded-full px-2 py-1'>#Love</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center  rounded-full px-2 py-1'>#VentureCapital</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#WritingCommunity</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#Inspiration</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#LiteraryLife</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#TraumaHealing</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#Gaming</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#WritingTips</span>
+                            <span className='bg-gray-300 text-gray-700 text-[12px] text-center flex items-center rounded-full px-2 py-1'>#Fiction</span>
                         </div>
                     </div>
                 </div>

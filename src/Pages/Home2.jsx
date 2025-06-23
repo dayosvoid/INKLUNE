@@ -1,7 +1,8 @@
 import React from 'react'
-import Nav from '../component/Nav'
+
 import BookSlide from '../component/BookSlide'
 import Post from '../component/Post'
+import Nav from '../component/Nav dayo'
 
 
 const Home2 = () =>{

@@ -22,18 +22,18 @@ const Nav = () => {
     },[menu])
   return (
     <div className='backdrop-blur-lg border-b-2 fixed border-gray-200 shadow-md w-full z-3 lg:px-[100px] '>
-        <div className='container mx-auto w-11/12 px-0 md:px-6 flex'>
+        <div className='container mx-auto w-11/12  flex items-center'>
             {/* the nav bar */}
             <nav className='w-full min-w-[300px] max-w-[1440px] flex justify-between items-center lg:py-[15px]  '>
                 {/* left section */}
                 <div className='flex gap-[24px] items-center'>
-                    <Link to='/Home2'><span className='size-20 sm:w-[110px] md:w-[129px] flex items-center cursor-pointer'><img src={AppLogo} alt="logo" className='' /></span></Link>
+                    <Link to='/Home2'><span className='size-20 sm:w-[110px] md:w-[125px] flex items-center cursor-pointer'><img src={AppLogo} alt="logo" className='' /></span></Link>
 
                     {/* the search bar */}
                     <div>
-                        <form action="" className='hidden md:flex outline-2 outline-gray-300 gap-[4px] items-center py-[5px] pl-[20px] md:min-w-[250px] lg:h-[44px] lg:min-w-[380px] rounded-full inset-shadow-sm inset-shadow-gray-500/20'>
-                            <button className=''><img src={Searchbar} alt="" className='size-[24px] cursor-pointer'/></button>
-                            <input type="text" placeholder='Search Stories' id='search' className='outline-none text-gray-900 font-semibold' />
+                        <form action="" className='hidden md:flex outline-2 outline-gray-300 gap-[2px] items-center py-[3px] pl-[10px] md:min-w-[250px] lg:h-[44px] lg:min-w-[380px] rounded-full inset-shadow-sm inset-shadow-gray-500/20'>
+                            <button className=''><img src={Searchbar} alt="" className='size-[20px] cursor-pointer'/></button>
+                            <input type="text" placeholder='Search Stories' id='search' className='outline-none pr-3 text-gray-900 text-[13px] font-semibold ' />
                         </form>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const Nav = () => {
                         menu && <div className=' absolute z-10 right-0 top-15 left-[-170px] md:hidden'><NavMenu/></div>
                     } */}
 
-                    <div className='hidden md:flex gap-[28px] items-center'>
+                    <div className='hidden md:flex gap-[20px] items-center'>
                         <span className='cursor-pointer'>
                            <Link to="/Post"> <button className='flex gap-1 cursor-pointer'> <img src={WriteIcon} alt="" className='size-[24px] inline'/> <p className='hover:font-bold'>Write</p> </button></Link>
                         </span>
@@ -70,7 +70,7 @@ const Nav = () => {
                         </span>
 
                         <span>
-                            <button className='cursor-pointer' ><img src={ProfileImg} alt="" className='size-[50px]' /></button>
+                            <Link to="/Profile"><button className='cursor-pointer' ><img src={ProfileImg} alt="" className='size-[20px] md:size-[40px]' /></button></Link>
                         </span>
                     </div>
                 </div>
